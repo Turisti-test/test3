@@ -1,0 +1,23 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacer una Reserva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hacer una Reserva</h1>
+  <form id="formReserva">
+    <label>Nombre del Huésped: <input type="text" id="huesped" required></label><br><br>
+    <label>ID del Alojamiento: <input type="number" id="idAlojamiento" required></label><br><br>
+    <label>Fecha de Entrada: <input type="date" id="fecha" required></label><br><br>
+    <label>Número de Personas: <input type="number" id="personas" required></label><br><br>
+    <label>Noches: <input type="number" id="noches" required></label><br><br>
+    <button type="submit">Reservar</button>
+  </form>
+  <a href="index.html">← Volver al inicio</a>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('formReserva').addEventListener('submit', hacerReserva);
+  </script>
+</body>
+</html>
